@@ -1,0 +1,267 @@
+# Tipos de tiendas
+tipos_tienda:
+  hipermercado: 0.20
+  supermercado: 0.55
+  tienda_conveniencia: 0.25
+
+# Canales de ventas
+canales:
+  tienda: 0.82
+  ecommerce: 0.14
+  marketplace: 0.04
+
+# Macro categorías
+macro_categorias:
+  - nombre: 'Alimentos y bebidas'
+    probabilidad: 0.42
+  - nombre: 'Cuidado personal e higiene'
+    probabilidad: 0.14
+  - nombre: 'Hogar y limpieza'
+    probabilidad: 0.18
+  - nombre: 'Electrónica y tecnología'
+    probabilidad: 0.08
+  - nombre: 'Ropa y calzado básico'
+    probabilidad: 0.10
+  - nombre: 'Bebés y maternidad'
+    probabilidad: 0.08
+
+# Rango de precios por macro categoría (precio_lista / precio_unitario_venta)
+rango_precios_por_categoria:
+  'Alimentos y bebidas':
+    min: 1000
+    max: 50000
+  'Cuidado personal e higiene':
+    min: 5000
+    max: 80000
+  'Hogar y limpieza':
+    min: 3000
+    max: 150000
+  'Electrónica y tecnología':
+    min: 20000
+    max: 3000000
+  'Ropa y calzado básico':
+    min: 15000
+    max: 250000
+  'Bebés y maternidad':
+    min: 5000
+    max: 200000
+
+# Países de operación y su distribución de tiendas/miembros
+paises:
+  colombia:
+    probabilidad: 0.35
+    ciudades:
+      - Bogota
+      - Medellin
+      - Cali
+  mexico:
+    probabilidad: 0.30
+    ciudades:
+      - Ciudad_Mexico
+      - Guadalajara
+      - Monterrey
+  chile:
+    probabilidad: 0.15
+    ciudades:
+      - Santiago
+      - Valparaiso
+  peru:
+    probabilidad: 0.12
+    ciudades:
+      - Lima
+      - Arequipa
+  ecuador:
+    probabilidad: 0.08
+    ciudades:
+      - Quito
+      - Guayaquil
+
+# Centros de distribución regionales y tiempos de reabastecimiento
+centros_distribucion:
+  - nombre: CD_Bogota
+    pais_asociado: colombia
+    tiempo_repo_dias:
+      min: 1
+      max: 3
+  - nombre: CD_Ciudad_Mexico
+    pais_asociado: mexico
+    tiempo_repo_dias:
+      min: 1
+      max: 3
+  - nombre: CD_Santiago
+    pais_asociado: chile
+    tiempo_repo_dias:
+      min: 1
+      max: 3
+
+# Parámetros de stock para INV_STOCK_DIARIO
+stock:
+  stock_minimo_config:
+    min: 10
+    max: 100
+  stock_maximo_config:
+    min: 100
+    max: 1000
+  stock_fisico_variacion: 0.30 # variación diaria en torno al consumo estimado
+
+# Volúmenes de datos a generar
+volumenes:
+  articulos: 5000
+  proveedores: 800
+  tiendas: 150
+  miembros: 50000
+  ventas: 1000000
+  inventario: 750000
+  devoluciones: 50000
+
+# Fijamos la semilla para poder replicar los resultados
+semilla: 42
+
+# Rango de fechas de la simulación (al menos 12 meses)
+rango_fechas:
+  inicio: '2023-01-01'
+  fin: '2026-06-30'
+
+# Porcentaje de valores nulos a introducir en campos no críticos
+valores_nulos: 0.05
+
+# Formatos de salida de los datos (mínimo dos distintos, ingesta heterogénea)
+formatos_salida:
+  - csv
+  - json
+  - parquet
+
+# Probabilidad de franjas horarias
+franjas_horarias:
+  - nombre: madrugada
+    inicio: '00:00'
+    fin: '06:00'
+    probabilidad: 0.02
+  - nombre: temprano
+    inicio: '06:00'
+    fin: '08:00'
+    probabilidad: 0.08
+  - nombre: manana
+    inicio: '08:00'
+    fin: '11:00'
+    probabilidad: 0.20
+  - nombre: mediodia
+    inicio: '11:00'
+    fin: '14:00'
+    probabilidad: 0.30
+  - nombre: tarde
+    inicio: '14:00'
+    fin: '17:00'
+    probabilidad: 0.15
+  - nombre: tarde_pico
+    inicio: '17:00'
+    fin: '20:00'
+    probabilidad: 0.20
+  - nombre: noche
+    inicio: '20:00'
+    fin: '23:59'
+    probabilidad: 0.05
+
+# Distribución por día de la semana
+dias_semana:
+  lunes: 0.90
+  martes: 0.95
+  miercoles: 1.00
+  jueves: 1.05
+  viernes: 1.30
+  sabado: 1.60
+  domingo: 1.40
+
+# Distribución de edades (para generar la edad numérica base)
+edades:
+  media: 36
+  desviacion: 13
+  minimo: 18
+  maximo: 85
+
+# Bins de rango_edad (campo categórico requerido en CRM_MIEMBROS)
+rango_edad_bins:
+  - rango: '18-25'
+    min: 18
+    max: 25
+  - rango: '26-35'
+    min: 26
+    max: 35
+  - rango: '36-45'
+    min: 36
+    max: 45
+  - rango: '46-60'
+    min: 46
+    max: 60
+  - rango: '60+'
+    min: 61
+    max: 85
+
+# Distribución de género
+genero:
+  masculino: 0.48
+  femenino: 0.49
+  no_informado: 0.03
+
+# Métodos de pago
+tipos_pago:
+  tarjeta_credito: 0.35
+  tarjeta_debito: 0.30
+  efectivo: 0.20
+  transferencia: 0.10
+  billetera_digital: 0.05
+
+# Descuentos aplicados en ventas (usado en fact_ventas y KPI de dashboard ejecutivo)
+descuento_aplicado:
+  probabilidad_con_descuento: 0.25
+  rango_porcentaje:
+    min: 0.05
+    max: 0.30
+
+# Motivos de devolución (para estandarización en fact_devoluciones - Gold)
+motivos_devolucion:
+  - codigo: 'DEF'
+    descripcion: 'Producto defectuoso'
+    probabilidad: 0.30
+  - codigo: 'TAM'
+    descripcion: 'Talla o tamaño incorrecto'
+    probabilidad: 0.20
+  - codigo: 'ARR'
+    descripcion: 'Arrepentimiento de compra'
+    probabilidad: 0.25
+  - codigo: 'VEN'
+    descripcion: 'Producto vencido'
+    probabilidad: 0.10
+  - codigo: 'ERR'
+    descripcion: 'Error en el pedido'
+    probabilidad: 0.15
+
+# Estados de la devolución
+estados_devolucion:
+  aprobada: 0.70
+  rechazada: 0.10
+  en_proceso: 0.20
+
+# Calificación de calidad de proveedores (MSTR_PROVEEDORES)
+calificacion_proveedores:
+  media: 3.8
+  desviacion: 0.7
+  minimo: 1
+  maximo: 5
+
+# Porcentaje de registros activos por tabla maestra
+activos:
+  articulos: 0.92
+  proveedores: 0.95
+  tiendas: 0.98
+  miembros: 0.85
+
+# Anomalías intencionales
+anomalias:
+  habilitadas: true
+  duplicados:
+    porcentaje: 0.005
+  fechas_fuera_rango:
+    porcentaje: 0.002
+  referencias_inexistentes:
+    porcentaje: 0.003

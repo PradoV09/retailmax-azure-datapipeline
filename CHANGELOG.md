@@ -10,3 +10,8 @@ Todas las entradas siguen el formato: `YYYY-MM-DD — Autor — Descripción`.
 - 2026-07-24 — Jose Luis Prado Valencia — Incorporación del archivo `requirements.txt` con las dependencias iniciales.
 - 2026-07-24 — Jose Luis Prado Valencia — Adición del archivo `CHANGELOG.md` para el seguimiento de cambios.
 - 2026-07-24 — Jose Luis Prado Valencia — Incorporación del documento `Prueba_tecnica_Escenario_B_Retail.md` con la definición del escenario de la prueba técnica.
+- 2026-07-24 — Jose Luis Prado Valencia — Eliminación del archivo `requirements.txt` para seguir la estructura del proyecto.
+
+### Día 2
+- 2026-07-24 — Jose Luis Prado Valencia — Adición del archivo `config.yaml` que contiene la configuración del faker.
+
