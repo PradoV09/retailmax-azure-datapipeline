@@ -129,7 +129,6 @@ valores_nulos: 0.05
 formatos_salida:
   - csv
   - json
-  - parquet
 
 # Probabilidad de franjas horarias
 franjas_horarias:
