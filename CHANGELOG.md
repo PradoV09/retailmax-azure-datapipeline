@@ -21,5 +21,6 @@ Todas las entradas siguen el formato: `YYYY-MM-DD — Autor — Descripción`.
 - 2026-07-26 — Jose Luis Prado Valencia — Modificación del archivo `config.yaml` que contiene la configuración del faker.
 
 ### Día 4
-2026-07-27 — Jose Luis Prado Valencia — Modificación del archivo `generate_retailmax_data.ipynb` agregue los dataframe de las tablas.
+- 2026-07-27 — Jose Luis Prado Valencia — Modificación del archivo `generate_retailmax_data.ipynb` agregue los dataframe de las tablas.
 - 2026-07-27 — Jose Luis Prado Valencia — Modificación del archivo `config.yaml` que contiene la configuración del faker.
+- 2026-07-27 — Jose Luis Prado Valencia — Modificación del archivo `generate_retailmax_data.ipynb` guarda los dataframe en los tipos de archivos usados (csv y json).
