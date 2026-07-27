@@ -19,3 +19,7 @@ Todas las entradas siguen el formato: `YYYY-MM-DD — Autor — Descripción`.
 - 2026-07-26 — Jose Luis Prado Valencia — Adición del archivo `generate_retailmax_data.ipynb` para generar datos sinteticos realistas para el caso RetailMax.
 - 2026-07-26 — Jose Luis Prado Valencia — Incorporación del archivo `requirements.txt` con las dependencias iniciales para el arhivo `generate_retailmax_data.ipynb`.
 - 2026-07-26 — Jose Luis Prado Valencia — Modificación del archivo `config.yaml` que contiene la configuración del faker.
+
+### Día 4
+2026-07-27 — Jose Luis Prado Valencia — Modificación del archivo `generate_retailmax_data.ipynb` agregue los dataframe de las tablas.
+- 2026-07-27 — Jose Luis Prado Valencia — Modificación del archivo `config.yaml` que contiene la configuración del faker.

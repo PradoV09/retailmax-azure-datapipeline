@@ -11,9 +11,9 @@ tipos_tienda:
 canales:
   - nombre: 'tienda'
     probabilidad: 0.82
-  - nombre: 'ecommerce'  
+  - nombre: 'ecommerce'
     probabilidad: 0.14
-  - nombre: 'marketplace'  
+  - nombre: 'marketplace'
     probabilidad: 0.04
 
 # Macro categorías
@@ -225,9 +225,9 @@ genero:
 tipos_pago:
   - nombre: 'tarjeta_credito'
     probabilidad: 0.35
-  - nombre: 'tarjeta_debito'  
+  - nombre: 'tarjeta_debito'
     probabilidad: 0.30
-  - nombre: 'efectivo'  
+  - nombre: 'efectivo'
     probabilidad: 0.20
   - nombre: 'transferencia'
     probabilidad: 0.10
@@ -291,3 +291,46 @@ anomalias:
     porcentaje: 0.002
   referencias_inexistentes:
     porcentaje: 0.003
+
+catalogo_por_categoria:
+  'Alimentos y bebidas':
+    - 'Arroz'
+    - 'Aceite'
+    - 'Gaseosa'
+    - 'Pasta'
+  'Cuidado personal e higiene':
+    - 'Shampoo'
+    - 'Jabón'
+    - 'Crema dental'
+  'Hogar y limpieza':
+    - 'Detergente'
+    - 'Escoba'
+    - 'Desinfectante'
+  'Electrónica y tecnología':
+    - 'Audífonos'
+    - 'Cargador'
+    - 'Mouse'
+  'Ropa y calzado básico':
+    - 'Camiseta'
+    - 'Medias'
+    - 'Tenis'
+  'Bebés y maternidad':
+    - 'Pañales'
+    - 'Toallitas húmedas'
+    - 'Biberón'
+
+presentaciones:
+  - nombre: 'Pequeño'
+  - nombre: 'Mediano'
+  - nombre: 'Grande'
+  - nombre: 'Familiar'
+  - nombre: 'x1'
+  - nombre: 'x3'
+  - nombre: 'x6'
+  - nombre: 'x12'
+  - nombre: '250g'
+  - nombre: '500g'
+  - nombre: '1kg'
+  - nombre: '500ml'
+  - nombre: '1L'
+  - nombre: '2L'
