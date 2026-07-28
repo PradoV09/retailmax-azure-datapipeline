@@ -24,3 +24,8 @@ Todas las entradas siguen el formato: `YYYY-MM-DD — Autor — Descripción`.
 - 2026-07-27 — Jose Luis Prado Valencia — Modificación del archivo `generate_retailmax_data.ipynb` agregue los dataframe de las tablas.
 - 2026-07-27 — Jose Luis Prado Valencia — Modificación del archivo `config.yaml` que contiene la configuración del faker.
 - 2026-07-27 — Jose Luis Prado Valencia — Modificación del archivo `generate_retailmax_data.ipynb` guarda los dataframe en los tipos de archivos usados (csv y json).
+
+### Día 5
+- 2026-07-28 — Jose Luis Prado Valencia — Modificación del archivo `generate_retailmax_data.ipynb` cambie algunas tablas para las relaciones.
+- 2026-07-28 — Jose Luis Prado Valencia — Adición del archivo `load_bd.ipynb` que contiene la carga de datos sintéticos en PostgreSQL.
+- 2026-07-28 — Jose Luis Prado Valencia — Adición del archivo `schema.sql` que contiene el codigo sql de la base de datos.

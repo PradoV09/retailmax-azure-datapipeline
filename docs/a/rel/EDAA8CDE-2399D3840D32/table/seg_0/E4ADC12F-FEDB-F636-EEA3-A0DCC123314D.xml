@@ -74,9 +74,10 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT021</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="activo" id="8996FD1C-81B0-B98D-BB02-F8C82EAE0274">
@@ -118,7 +119,7 @@
 <colUsage columnID="25492C73-A787-2266-2FAA-F6EBFB026B52"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0416095F-E52A-2AAA-F265-D0E996184B0C" name="mstr_articulos_mstr_proveedores_FK">
+<ind_PK_UK id="0416095F-E52A-2AAA-F265-D0E996184B0C" name="fk_articulos_proveedores">
 <createdBy>PradoV09</createdBy>
 <createdTime>2026-07-28 15:45:29 UTC</createdTime>
 <ownerDesignName>a</ownerDesignName>

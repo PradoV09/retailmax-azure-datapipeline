@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: retailmax-db
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: retailmax
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
+
+volumes:
+  postgres_data:
+
+# Comando para correr 
+# cd infra/docker
+
+# Comando para correr
+# docker compose up -d

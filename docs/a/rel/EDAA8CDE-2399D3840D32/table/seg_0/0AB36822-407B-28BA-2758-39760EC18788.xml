@@ -71,7 +71,7 @@
 <colUsage columnID="BDA6F61C-EA8B-41E4-90F3-C7A1F13A31BF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A138634E-7BC8-E161-1D30-5443131CFC22" name="fact_devoluciones_fact_ventas_FK">
+<ind_PK_UK id="A138634E-7BC8-E161-1D30-5443131CFC22" name="fk_devoluciones_ventas">
 <createdBy>PradoV09</createdBy>
 <createdTime>2026-07-28 15:06:03 UTC</createdTime>
 <ownerDesignName>a</ownerDesignName>

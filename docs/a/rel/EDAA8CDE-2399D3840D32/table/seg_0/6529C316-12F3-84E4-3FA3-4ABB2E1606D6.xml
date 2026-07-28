@@ -30,42 +30,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_miembro" id="82384094-709E-B731-B3C3-4EB9A07607B0">
-<createdBy>PradoV09</createdBy>
-<createdTime>2026-07-28 14:34:47 UTC</createdTime>
-<ownerDesignName>a</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>12</dataTypeSize>
-<ownDataTypeParameters>12,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_articulo" id="64365A02-8C50-3FFD-CAF8-255C4886ADDE">
-<createdBy>PradoV09</createdBy>
-<createdTime>2026-07-28 14:34:47 UTC</createdTime>
-<ownerDesignName>a</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>12</dataTypeSize>
-<ownDataTypeParameters>12,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_tienda" id="40484C0D-166C-CD83-8CF4-67E92A63CC48">
-<createdBy>PradoV09</createdBy>
-<createdTime>2026-07-28 14:34:47 UTC</createdTime>
-<ownerDesignName>a</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>12</dataTypeSize>
-<ownDataTypeParameters>12,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="canal" id="D2DF8FED-F77C-0CD5-FAD4-A50B95991AA9">
 <createdBy>PradoV09</createdBy>
 <createdTime>2026-07-28 14:34:47 UTC</createdTime>
@@ -136,7 +100,7 @@
 <colUsage columnID="EFD75CFA-3724-56A6-2D50-1B9E7C64D962"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="88348AD9-E7AA-3455-0851-A6BA76CD9E05" name="fact_ventas_crm_miembros_FK">
+<ind_PK_UK id="88348AD9-E7AA-3455-0851-A6BA76CD9E05" name="fk_ventas_miembros">
 <createdBy>PradoV09</createdBy>
 <createdTime>2026-07-28 14:57:09 UTC</createdTime>
 <ownerDesignName>a</ownerDesignName>
@@ -146,7 +110,7 @@
 <colUsage columnID="40135866-24DC-4DA4-D1B7-5CDDFE045832"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="67B706DB-930B-36FB-50E6-AEA504965084" name="fact_ventas_mstr_articulos_FK">
+<ind_PK_UK id="67B706DB-930B-36FB-50E6-AEA504965084" name="fk_ventas_articulos">
 <createdBy>PradoV09</createdBy>
 <createdTime>2026-07-28 14:57:19 UTC</createdTime>
 <ownerDesignName>a</ownerDesignName>
@@ -156,7 +120,7 @@
 <colUsage columnID="345EBBCD-9C64-7644-1A06-2FA20291ED6A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0E5AEADF-9963-D641-1F3D-08482B083D83" name="fact_ventas_mstr_tiendas_FK">
+<ind_PK_UK id="0E5AEADF-9963-D641-1F3D-08482B083D83" name="fk_ventas_tiendas">
 <createdBy>PradoV09</createdBy>
 <createdTime>2026-07-28 15:00:04 UTC</createdTime>
 <ownerDesignName>a</ownerDesignName>
