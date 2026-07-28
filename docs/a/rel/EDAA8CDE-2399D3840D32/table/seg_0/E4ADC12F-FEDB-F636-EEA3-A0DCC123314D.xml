@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4ADC12F-FEDB-F636-EEA3-A0DCC123314D" name="mstr_articulos">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:58:13 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_articulo" id="25492C73-A787-2266-2FAA-F6EBFB026B52">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 13:03:08 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_producto" id="7CDD9CC1-F6A8-1325-506E-C4E134BB6388">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 13:03:08 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categoria" id="9F15E84F-FC09-0074-484A-22CFBC347C05">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 13:03:08 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sku" id="91E37FFC-0222-9D69-6E49-A86087A3865A">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 13:03:08 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_barras" id="0077768D-B837-5E78-97DA-E20EF8FC3E69">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 13:03:08 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="6F8CA073-FBF3-0490-A080-E776272B25D9">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 13:03:08 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="8996FD1C-81B0-B98D-BB02-F8C82EAE0274">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 13:03:08 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mstr_proveedores_id_proveedor" id="57D023E6-AD9A-C846-F394-10DB727FCAE0">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 15:45:29 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="56D1A000-DDD5-6705-C0C2-1F0A388A2EA7" referredColumn="0F0EF87B-35AE-1064-151F-07EBF9E4B424"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73830BD1-22B6-8CC1-52C5-99E00943DEA4" name="mstr_articulos_PK">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 13:19:48 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25492C73-A787-2266-2FAA-F6EBFB026B52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0416095F-E52A-2AAA-F265-D0E996184B0C" name="mstr_articulos_mstr_proveedores_FK">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 15:45:29 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57D023E6-AD9A-C846-F394-10DB727FCAE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

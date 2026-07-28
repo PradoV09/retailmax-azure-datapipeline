@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4656D50-2A09-0FB7-7CDA-18299AC7E671" name="inv_stock_diario">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:51:23 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_articulo" id="1D2C643B-A2F1-AD72-F69F-72F819058443">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:52:57 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tienda" id="3573D277-31E0-790A-5585-7FFFFFC5A3AB">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:52:57 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_minimo" id="7B124A51-E482-968D-B815-4C552561AE70">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:52:57 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_maximo" id="E6977B7D-0D79-A005-1DFA-DA16F660DB54">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:52:57 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_fisico" id="5BE72F18-22A2-6DBF-CBB3-014302CCFBD0">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:53:16 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mstr_tiendas_id_tienda" id="5D35A4F7-1F07-24F1-F009-D653048D0249">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 15:01:52 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4D664BE-EEAC-9705-1F21-0A7C73659626" referredColumn="362EA3A7-95F8-19F1-120B-D28AB670A459"/>
+</associations>
+</Column>
+<Column name="mstr_articulos_id_articulo" id="66387F98-00BC-C02A-A0F3-7B114BD74125">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 15:17:11 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7493326-1297-6D17-718E-6B7FC1630AC4" referredColumn="25492C73-A787-2266-2FAA-F6EBFB026B52"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B00B280A-C008-D570-4788-9A314A96F5AB" name="inv_stock_diario_PK">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 14:09:01 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D2C643B-A2F1-AD72-F69F-72F819058443"/>
+<colUsage columnID="3573D277-31E0-790A-5585-7FFFFFC5A3AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCA4246E-67B3-9468-5AED-5E85E57D51DA" name="inv_stock_diario_mstr_tiendas_FK">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 15:01:52 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D35A4F7-1F07-24F1-F009-D653048D0249"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2552FD3-33E4-DAA2-F87D-7FEAF00A1EDA" name="inv_stock_diario_mstr_articulos_FK">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 15:17:11 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66387F98-00BC-C02A-A0F3-7B114BD74125"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

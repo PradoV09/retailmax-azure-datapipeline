@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E7493326-1297-6D17-718E-6B7FC1630AC4" containerWithKeyObject="D4656D50-2A09-0FB7-7CDA-18299AC7E671" localFKIndex="E2552FD3-33E4-DAA2-F87D-7FEAF00A1EDA" name="inv_stock_diario_mstr_articulos_FK">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 15:17:11 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<referredTableLongName>mstr_articulos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E4ADC12F-FEDB-F636-EEA3-A0DCC123314D</referredTableID>
+<keyObject>73830BD1-22B6-8CC1-52C5-99E00943DEA4</keyObject>
+<referredKeyID>73830BD1-22B6-8CC1-52C5-99E00943DEA4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_articulo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

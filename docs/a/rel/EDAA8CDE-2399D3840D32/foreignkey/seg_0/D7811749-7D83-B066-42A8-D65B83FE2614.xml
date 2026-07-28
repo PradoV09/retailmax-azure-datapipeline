@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D7811749-7D83-B066-42A8-D65B83FE2614" containerWithKeyObject="0AB36822-407B-28BA-2758-39760EC18788" localFKIndex="A138634E-7BC8-E161-1D30-5443131CFC22" name="fact_devoluciones_fact_ventas_FK">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 15:06:03 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<referredTableLongName>fact_ventas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6529C316-12F3-84E4-3FA3-4ABB2E1606D6</referredTableID>
+<keyObject>C5C32CBA-4E52-F6FF-E3C9-7D40461F7498</keyObject>
+<referredKeyID>C5C32CBA-4E52-F6FF-E3C9-7D40461F7498</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_venta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

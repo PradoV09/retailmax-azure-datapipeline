@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0AB36822-407B-28BA-2758-39760EC18788" name="fact_devoluciones">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:49:05 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_venta" id="BDA6F61C-EA8B-41E4-90F3-C7A1F13A31BF">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:50:46 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="80C7D9A3-4832-2017-110A-9F5BEBA2ABDE">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:50:46 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="motivo" id="45D4FF65-0510-D757-302E-6C412084A0F0">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:50:46 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fact_ventas_id_venta" id="8B1C6D45-7726-251B-9683-26120FB89BD8">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 15:06:03 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7811749-7D83-B066-42A8-D65B83FE2614" referredColumn="EFD75CFA-3724-56A6-2D50-1B9E7C64D962"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7DF9D47E-5C1D-72BB-2DDB-591B85873A86" name="fact_devoluciones_PK">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 14:10:02 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDA6F61C-EA8B-41E4-90F3-C7A1F13A31BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A138634E-7BC8-E161-1D30-5443131CFC22" name="fact_devoluciones_fact_ventas_FK">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 15:06:03 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B1C6D45-7726-251B-9683-26120FB89BD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

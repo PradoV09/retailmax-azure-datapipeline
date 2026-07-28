@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C4D664BE-EEAC-9705-1F21-0A7C73659626" containerWithKeyObject="D4656D50-2A09-0FB7-7CDA-18299AC7E671" localFKIndex="CCA4246E-67B3-9468-5AED-5E85E57D51DA" name="inv_stock_diario_mstr_tiendas_FK">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 15:01:52 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<referredTableLongName>mstr_tiendas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1888C122-98F3-9D1E-F9E6-7ED42A30DAD9</referredTableID>
+<keyObject>9694D7AE-A730-A79B-002E-FD715EB819AF</keyObject>
+<referredKeyID>9694D7AE-A730-A79B-002E-FD715EB819AF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tienda</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00F53893-4952-FAF0-1B36-318A1C152455" name="mstr_proveedores">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:33:12 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<engineerTo>
+<item key="660D6326-19AE-CEC3-01EF-58CE7DC65229" value="true"/>
+<item key="EDAA8CDE-F33C-E1E6-CBE1-2399D3840D32" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_proveedor" id="BB5B4EB3-8310-8FEC-0FFC-952A14FBBD3C">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:33:30 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<engineerTo>
+<item key="660D6326-19AE-CEC3-01EF-58CE7DC65229" value="true"/>
+<item key="EDAA8CDE-F33C-E1E6-CBE1-2399D3840D32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_proveedor" id="EFB4A421-A7B0-B91D-0337-B5D4E9C38146">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:33:38 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<engineerTo>
+<item key="660D6326-19AE-CEC3-01EF-58CE7DC65229" value="true"/>
+<item key="EDAA8CDE-F33C-E1E6-CBE1-2399D3840D32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pasi" id="D7C693E2-6F9D-DDA2-634D-5D16C50E5957">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:33:57 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<engineerTo>
+<item key="660D6326-19AE-CEC3-01EF-58CE7DC65229" value="true"/>
+<item key="EDAA8CDE-F33C-E1E6-CBE1-2399D3840D32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ciudad" id="8E8C3A03-1D9A-8A76-4353-FF40CBBF359F">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:34:11 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<engineerTo>
+<item key="660D6326-19AE-CEC3-01EF-58CE7DC65229" value="true"/>
+<item key="EDAA8CDE-F33C-E1E6-CBE1-2399D3840D32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centro_distribucion" id="E6871B50-C6D4-E361-9327-5B0C63A7053E">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:34:18 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<engineerTo>
+<item key="660D6326-19AE-CEC3-01EF-58CE7DC65229" value="true"/>
+<item key="EDAA8CDE-F33C-E1E6-CBE1-2399D3840D32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="07F02C84-0814-65F9-B38D-AC30ACEA0218">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:34:39 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<engineerTo>
+<item key="660D6326-19AE-CEC3-01EF-58CE7DC65229" value="true"/>
+<item key="EDAA8CDE-F33C-E1E6-CBE1-2399D3840D32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="26118144-1AFB-9B78-05DB-3E8574FAABA8">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:34:55 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<engineerTo>
+<item key="660D6326-19AE-CEC3-01EF-58CE7DC65229" value="true"/>
+<item key="EDAA8CDE-F33C-E1E6-CBE1-2399D3840D32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="calificacion" id="0F9D8889-BA60-0780-D6C3-E7AB2816956C">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:35:04 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<engineerTo>
+<item key="660D6326-19AE-CEC3-01EF-58CE7DC65229" value="true"/>
+<item key="EDAA8CDE-F33C-E1E6-CBE1-2399D3840D32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="activo" id="59EDA8E8-B66F-C40B-726C-8180DCC0811E">
+<createdBy>PradoV09</createdBy>
+<createdTime>2026-07-28 12:35:52 UTC</createdTime>
+<ownerDesignName>a</ownerDesignName>
+<engineerTo>
+<item key="660D6326-19AE-CEC3-01EF-58CE7DC65229" value="true"/>
+<item key="EDAA8CDE-F33C-E1E6-CBE1-2399D3840D32" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
