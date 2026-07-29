@@ -6,7 +6,7 @@ resource "azurerm_resource_group" "rg" {
 
 # Crear cuenta de almacenamiento
 resource "azurerm_storage_account" "storage" {
-  name = var.storage_account_name
+  name                = var.storage_account_name
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
 
@@ -15,7 +15,7 @@ resource "azurerm_storage_account" "storage" {
   is_hns_enabled           = true
 
   tags = {
-  environment = var.environment
+    environment = var.environment
   }
 }
 
@@ -39,5 +39,24 @@ resource "azurerm_data_factory" "adf" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
 }
+
+# Módulo SQL comentado temporalmente debido a restricciones de aprovisionamiento en la suscripción
+# module "azure_sql" {
+#
+#   source = "../../modules/azure_sql"
+#
+#   sql_server_name = "sql-retailmax-dev-northeurope"
+#
+#   database_name = "retailmax"
+#
+#   resource_group_name = azurerm_resource_group.rg.name
+#
+#   location = "northeurope"
+#
+#   admin_username = "sqladmin"
+#
+#   admin_password = var.sql_admin_password
+#
+# }
 
 data "azurerm_client_config" "current" {}

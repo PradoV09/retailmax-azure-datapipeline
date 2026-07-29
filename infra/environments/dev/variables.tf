@@ -25,3 +25,13 @@ variable "resource_group_name" {
 variable "storage_account_name" {
   type = string
 }
+
+variable "sql_admin_password" {
+
+  description = "Password administrador Azure SQL"
+
+  type = string
+
+  sensitive = true
+
+}

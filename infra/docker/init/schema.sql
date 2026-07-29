@@ -17,19 +17,19 @@ CREATE TABLE crm_miembros (
 
 CREATE TABLE mstr_proveedores (
     id_proveedor VARCHAR(12),
-    nombre_producto VARCHAR(100),
+    nombre_proveedor VARCHAR(100),
     pais VARCHAR(100),
     ciudad VARCHAR(100),
     centro_distribucion VARCHAR(100),
     email VARCHAR(100),
-    telefono INTEGER,
+    telefono VARCHAR(100),
     calificacion NUMERIC(2, 1),
     activo BOOLEAN
 );
 
 CREATE TABLE mstr_tiendas (
     id_tienda VARCHAR(12),
-    tipo_tienda VARCHAR(12),
+    tipo_tienda VARCHAR(50),
     pais VARCHAR(100),
     ciudad VARCHAR(100),
     centro_distribucion VARCHAR(100),
@@ -50,20 +50,19 @@ CREATE TABLE mstr_articulos (
 CREATE TABLE fact_ventas (
     id_venta VARCHAR(12),
     fecha_hora TIMESTAMP,
+    id_miembro VARCHAR(12),
+    id_articulo VARCHAR(12),
+    id_tienda VARCHAR(12),
     canal VARCHAR(100),
     tipo_pago VARCHAR(50),
     descuento NUMERIC(5, 2),
-    precio NUMERIC(12, 2),
-    crm_miembros_id_miembro VARCHAR(12),
-    mstr_articulos_id_articulo VARCHAR(12),
-    mstr_tiendas_id_tienda VARCHAR(12)
+    precio NUMERIC(12, 2)
 );
 
 CREATE TABLE fact_devoluciones (
     id_venta VARCHAR(12),
     estado VARCHAR(100),
-    motivo VARCHAR(100),
-    fact_ventas_id_venta VARCHAR(12)
+    motivo VARCHAR(100)
 );
 
 CREATE TABLE inv_stock_diario (
@@ -101,16 +100,13 @@ ALTER TABLE mstr_articulos
 ADD CONSTRAINT fk_mstr_articulos_proveedores FOREIGN KEY (mstr_proveedores_id_proveedor) REFERENCES mstr_proveedores (id_proveedor);
 
 ALTER TABLE fact_ventas
-ADD CONSTRAINT fk_fact_ventas_articulos FOREIGN KEY (mstr_articulos_id_articulo) REFERENCES mstr_articulos (id_articulo);
+ADD CONSTRAINT fk_fact_ventas_articulos FOREIGN KEY (id_articulo) REFERENCES mstr_articulos (id_articulo);
 
 ALTER TABLE fact_ventas
-ADD CONSTRAINT fk_fact_ventas_miembros FOREIGN KEY (crm_miembros_id_miembro) REFERENCES crm_miembros (id_miembro);
+ADD CONSTRAINT fk_fact_ventas_miembros FOREIGN KEY (id_miembro) REFERENCES crm_miembros (id_miembro);
 
 ALTER TABLE fact_ventas
-ADD CONSTRAINT fk_fact_ventas_tiendas FOREIGN KEY (mstr_tiendas_id_tienda) REFERENCES mstr_tiendas (id_tienda);
-
-ALTER TABLE fact_devoluciones
-ADD CONSTRAINT fk_fact_devoluciones_ventas FOREIGN KEY (fact_ventas_id_venta) REFERENCES fact_ventas (id_venta);
+ADD CONSTRAINT fk_fact_ventas_tiendas FOREIGN KEY (id_tienda) REFERENCES mstr_tiendas (id_tienda);
 
 ALTER TABLE inv_stock_diario
 ADD CONSTRAINT fk_inv_stock_articulo FOREIGN KEY (id_articulo) REFERENCES mstr_articulos (id_articulo);

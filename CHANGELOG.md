@@ -38,3 +38,5 @@ Todas las entradas siguen el formato: `YYYY-MM-DD — Autor — Descripción`.
 - 2026-07-29 — Jose Luis Prado Valencia — Modificación del archivo `variables.tf` que contiene los secretos (variables de entorno).
 - 2026-07-29 — Jose Luis Prado Valencia — Readme de documentacion con las capturas `README.md`.
 - 2026-07-29 — Jose Luis Prado Valencia — Readme de documentacion con las capturas `README.md`.
+- 2026-07-29 — Jose Luis Prado Valencia — Modificación de `load_bd.ipynb`.
+- 2026-07-29 — Jose Luis Prado Valencia — Adicción del modulo azure_sql.tf.

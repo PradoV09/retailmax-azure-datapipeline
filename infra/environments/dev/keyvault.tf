@@ -1,5 +1,12 @@
+resource "random_string" "kv_suffix" {
+  length  = 6
+  special = false
+  upper   = false
+  numeric = true
+}
+
 resource "azurerm_key_vault" "kv" {
-  name = "kv-retail-prado09"
+  name = "kv-retail-y3dkv2"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
 
@@ -20,14 +27,14 @@ resource "azurerm_key_vault" "kv" {
     tenant_id = data.azurerm_client_config.current.tenant_id
     object_id = data.azurerm_client_config.current.object_id
 
-  secret_permissions = [
-  "Get",
-  "List",
-  "Set",
-  "Delete",
-  "Recover",
-  "Purge"
-  ]
+    secret_permissions = [
+      "Get",
+      "List",
+      "Set",
+      "Delete",
+      "Recover",
+      "Purge"
+    ]
   }
 }
 

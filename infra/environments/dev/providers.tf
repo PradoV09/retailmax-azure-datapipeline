@@ -1,14 +1,18 @@
-# Recomendamos encarecidamente usar el bloque required_providers para configurar el origen y la versión del proveedor de Azure que se está utilizando.
 terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 5.0"
+      version = "~> 4.81"
+    }
+
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.6"
     }
   }
 }
 
-# Configurar el proveedor de Microsoft Azure
 provider "azurerm" {
   features {}
+  resource_provider_registrations = "none"
 }
