@@ -1,1 +1,7 @@
 data-generation/output/
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars

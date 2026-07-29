@@ -29,3 +29,4 @@ Todas las entradas siguen el formato: `YYYY-MM-DD — Autor — Descripción`.
 - 2026-07-28 — Jose Luis Prado Valencia — Modificación del archivo `generate_retailmax_data.ipynb` cambie algunas tablas para las relaciones.
 - 2026-07-28 — Jose Luis Prado Valencia — Adición del archivo `load_bd.ipynb` que contiene la carga de datos sintéticos en PostgreSQL.
 - 2026-07-28 — Jose Luis Prado Valencia — Adición del archivo `schema.sql` que contiene el codigo sql de la base de datos.
+- 2026-07-28 — Jose Luis Prado Valencia — Creada la infraestructura como código.
