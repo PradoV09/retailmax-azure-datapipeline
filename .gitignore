@@ -5,3 +5,4 @@ data-generation/output/
 *.tfstate.*
 crash.log
 *.tfvars
+terraform.tfvars
