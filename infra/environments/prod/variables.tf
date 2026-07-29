@@ -27,13 +27,9 @@ variable "storage_account_name" {
 }
 
 variable "sql_admin_password" {
-
   description = "Password administrador Azure SQL"
-
-  type = string
-
-  sensitive = true
-
+  type        = string
+  sensitive   = true
 }
 
 variable "notification_email" {

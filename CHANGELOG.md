@@ -40,3 +40,11 @@ Todas las entradas siguen el formato: `YYYY-MM-DD — Autor — Descripción`.
 - 2026-07-29 — Jose Luis Prado Valencia — Readme de documentacion con las capturas `README.md`.
 - 2026-07-29 — Jose Luis Prado Valencia — Modificación de `load_bd.ipynb`.
 - 2026-07-29 — Jose Luis Prado Valencia — Adicción del modulo azure_sql.tf.
+- 2026-07-29 — Jose Luis Prado Valencia — Modificación de `silver_layer.ipynb`.
+- 2026-07-29 — Jose Luis Prado Valencia — Implementación completa de la capa Silver con limpieza, validación de integridad referencial, enmascaramiento de PII y reporte de calidad de datos.
+- 2026-07-29 — Jose Luis Prado Valencia — Implementación completa de la capa Gold con reglas de negocio del Escenario B, cálculo RFM y tablas de agregación para KPIs ejecutivos.
+- 2026-07-29 — Jose Luis Prado Valencia — Creación del notebook `gold_layer.ipynb` con transformaciones finales y documentación de linaje de datos.
+- 2026-07-29 — Jose Luis Prado Valencia — Creación del catálogo de datos en `docs/catalogo_datos.md` con documentación de todas las tablas Silver y Gold.
+- 2026-07-29 — Jose Luis Prado Valencia — Simplificación de notebooks Silver y Gold Layer para hacer los procesos más fáciles de ejecutar y entender.
+- 2026-07-29 — Jose Luis Prado Valencia — Completación de Fase 2: Creación de módulo Action Group para Azure Monitor, integración en entorno dev, outputs completos en entorno dev, y estructura completa de entorno prod reutilizando módulos existentes.
+- 2026-07-29 — Jose Luis Prado Valencia — Completación de Fase 3: Agregado particionamiento año/mes/día en Bronze, carga incremental sencilla, log de ejecución, tabla de errores del pipeline, idempotencia con overwrite=True, y reporte de ejecución.
