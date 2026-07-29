@@ -30,3 +30,7 @@ Todas las entradas siguen el formato: `YYYY-MM-DD — Autor — Descripción`.
 - 2026-07-28 — Jose Luis Prado Valencia — Adición del archivo `load_bd.ipynb` que contiene la carga de datos sintéticos en PostgreSQL.
 - 2026-07-28 — Jose Luis Prado Valencia — Adición del archivo `schema.sql` que contiene el codigo sql de la base de datos.
 - 2026-07-28 — Jose Luis Prado Valencia — Creada la infraestructura como código.
+
+### Día 6
+- 2026-07-29 — Jose Luis Prado Valencia — Adicción del archivo `keyvault.tf` que contiene el Azure Key Vault.
+- 2026-07-29 — Jose Luis Prado Valencia — Adicción del archivo `variables.tf` que contiene los secretos (variables de entorno).
