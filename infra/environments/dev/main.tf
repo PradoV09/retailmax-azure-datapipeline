@@ -34,3 +34,9 @@ resource "azurerm_storage_data_lake_gen2_filesystem" "gold" {
   name               = "gold"
   storage_account_id = azurerm_storage_account.storage.id
 }
+
+resource "azurerm_data_factory" "adf" {
+  name                = "adf-retailmax-pradov09"
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
