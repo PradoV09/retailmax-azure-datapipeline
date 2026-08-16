@@ -34,30 +34,37 @@ Evidencia de ejecución en la nube: cada captura corresponde a la tabla ya cread
 ### 3.1 Tablas Maestras
 
 **Artículos**
+
 ![mstr_articulos](/docs/ENTREGABLES%20FASE%201/mstr_articulos.png)
 
 **Proveedores**
+
 ![mstr_proveedores](/docs/ENTREGABLES%20FASE%201/mstr_proveedores.png)
 
 **Tiendas**
+
 ![mstr_tiendas](/docs/ENTREGABLES%20FASE%201/mstr_tiendas.png)
 
 ### 3.2 CRM
 
 **Miembros**
+
 ![crm_miembros](/docs/ENTREGABLES%20FASE%201/crm_miembros.png)
 
 ### 3.3 Transaccionales
 
 **Ventas**
+
 ![trans_ventas](/docs/ENTREGABLES%20FASE%201/trans_ventas.png)
 
 **Devoluciones (POS)**
+
 ![post_devoluciones](/docs/ENTREGABLES%20FASE%201/post_devoluciones.png)
 
 ### 3.4 Inventario
 
 **Stock Diario**
+
 ![inv_stock_diario](/docs/ENTREGABLES%20FASE%201/inv_stock_diario.png)
 
 ## 4. Resumen de Entregables
@@ -72,3 +79,4 @@ Evidencia de ejecución en la nube: cada captura corresponde a la tabla ya cread
 | 6 | trans_ventas | Transaccional | `trans_ventas.png` | ✅ Cargada en Azure SQL |
 | 7 | post_devoluciones | Transaccional | `post_devoluciones.png` | ✅ Cargada en Azure SQL |
 | 8 | inv_stock_diario | Inventario | `inv_stock_diario.png` | ✅ Cargada en Azure SQL |
+
